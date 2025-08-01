@@ -4,7 +4,7 @@ import { FileDown } from 'lucide-react';
 export default function DownloadButtons() {
   const handleDownload = (filename: string) => {
     const link = document.createElement('a');
-    link.href = `/documents/${filename}`;
+    link.href = `${filename}`;
     link.download = filename;
     document.body.appendChild(link);
     link.click();
